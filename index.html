@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script> 
             $(document).ready(function(){
                 $("#h-aboutme").click(function(){
                     $("#p-aboutme").slideToggle("medium");
-    });
-});
-</script>
+                });
+            });
+            $(document).ready(function(){
+                $("#h-workex").click(function(){
+                    $("#p-workex").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#h-tech").click(function(){
+                    $("#p-tech").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#h-projects").click(function(){
+                    $("#p-projects").slideToggle("medium");
+                });
+            });
+            $(document).ready(function(){
+                $("#h-oscontri").click(function(){
+                    $("#p-oscontri").slideToggle("medium");
+                });
+            });
+            
+        </script>
+        <style>
+            #p-workex,#p-tech,#p-projects,#p-oscontri,#p-blog,#p-contact{
+                display:none;
+            }
+        </style>
         
     </head>
     <h1>Welcome!</h1>
@@ -29,8 +56,8 @@
     <p id="p-aboutme">About meAbout meAbout meAbout meAbout meAbout meAbout meAbout meAbout meAbout me</p>
   <h3 id="h-workex">Work ex</h3>
     <p id="p-workex">Workex Workex Workex Workex Workex Workex Workex Workex Workex Workex Workex Workex </p>
-  <h3 id="p-workex">Technologies/ Languages used</h3>
-    <p id="p-workex">Some random text....Some random text....Some random text....Some random text....Some random text....</p>
+  <h3 id="p-tech">Technologies/ Languages used</h3>
+    <p id="p-tech">Some random text....Some random text....Some random text....Some random text....Some random text....</p>
   <h3 id="h-projects">Projects</h3>
     <p id="p-projects">Some random text....Some random text....Some random text....Some random text....Some random text....</p>
   <h3 id="oscontri">Open Source Contribution</h3>
