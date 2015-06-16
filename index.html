@@ -15,14 +15,21 @@
   
   <body>
     
-    <div data-role="page">
+    <div data-role="page" id="about">
       
       <div data-role="header">
+        <h1>About</h1>
+      </div>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#" data-icon="home">About</a></li>
+          <li><a href="#contact" data-icon="mail">Contact</a></li>
+          <li><a href="http://www.beancoder.com" data-icon="action">Blog</a></li>
+        </ul>
+      </div>
+      <div data-role="main">
         <h1>Hi! My name is Akshay Nagpal.</h1>
         <h2>I code, blog and sleep.</h2>
-      </div>
-      
-      <div data-role="main">
         <p>Random Paragraph here!Random Paragraph here!Random Paragraph here!Random Paragraph here!</p>
         <p>Random Paragraph here!Random Paragraph here!Random Paragraph here!Random Paragraph here!</p>
         <p>Random Paragraph here!Random Paragraph here!Random Paragraph here!Random Paragraph here!</p>
@@ -32,9 +39,35 @@
       <div data-role="footer">
         Footer text.
       </div>
-    </div>
+    </div>  <!-- page end -->
+    
+    <div data-role="page" id="contact">
+      
+      <div data-role="header">
+        <h1>Contact</h1>
+      </div>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#about" data-icon="home">About</a></li>
+          <li><a href="#" data-icon="mail">Contact</a></li>
+          <li><a href="http://www.beancoder.com" data-icon="action">Blog</a></li>
+        </ul>
+      </div>
+      <div data-role="main">
+        <h3><a href="http://twitter.com/akshay2626">Twitter (@akshay2626)</a></h3>
+        <h3>LinkedIn</h3>
+        <h3>Email - akshay2626 [at] gmail [dot] com</h3>
+        <h3>Address</h3>
+        <p>Random Paragraph here!Random Paragraph here!Random Paragraph here!Random Paragraph here!</p>
+        <p>Random Paragraph here!Random Paragraph here!Random Paragraph here!Random Paragraph here!</p>
+        <p>Random Paragraph here!Random Paragraph here!Random Paragraph here!Random Paragraph here!</p>
+        <p>Random Paragraph here!Random Paragraph here!Random Paragraph here!Random Paragraph here!</p>
+      </div>
+      
+      <div data-role="footer">
+        Footer text.
+      </div>
+    </div>  <!-- page end -->
+    
   </body>
-  
-  
-  
 </html>
