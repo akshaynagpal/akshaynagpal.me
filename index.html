@@ -12,12 +12,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script>
       $(document).on("pagecreate","#about",function(){
-        $(document).on("swiperight",function(){
+        $(document).on("swipeleft",function(){
           $.mobile.changePage( "#contact", { transition: "slide" });
         });                       
       });
       $(document).on("pagecreate","#contact",function(){
-        $(document).on("swipeleft",function(){
+        $(document).on("swiperight",function(){
           $.mobile.changePage( "#about", { transition: "slide", reverse:true });
         });                       
       });
