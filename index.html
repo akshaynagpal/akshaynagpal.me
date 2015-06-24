@@ -28,9 +28,21 @@
 -->
     <style>
     .simple-link{
-      a:link,visited{
-        text-decoration: none;
-      }  
+          a:link {
+            text-decoration: none;
+          }
+
+          a:visited {
+              text-decoration: none;
+          }
+          
+          a:hover {
+              text-decoration: underline;
+          }
+          
+          a:active {
+              text-decoration: underline;
+          } 
     }
     #introduction,#contact-info{
       text-align:center;
@@ -60,7 +72,7 @@
         <h1>Hi! My name is Akshay Nagpal.</h1>
         <h2> I code, blog and love food. </h2>
         CS Undergrad (Final Year) <br>
-        Currently, Research and Development Intern at <a href="http://www.medialabasia.in/" target="_blank">Media Lab Asia</a><br>
+        Currently, Research and Development Intern at <a class="simple-link" href="http://www.medialabasia.in/" target="_blank">Media Lab Asia</a><br>
         You can find more about me below.
         </div>
 
@@ -69,7 +81,7 @@
           <ul data-role="listview" data-inset="true">
             <li>mjar
               <p>Search/access The Medical Journal of Australia's database of journals using web scraping in R.<br>
-              <a href="http://akshaynagpal.github.io/mjar">Visit package Website</a></p>
+              <a  class="simple-link" href="http://akshaynagpal.github.io/mjar">Visit package Website</a></p>
             </li>
             <li>tic-tac-toe
             <p>Details to be updated soon.</p></li>
@@ -80,21 +92,21 @@
             <li>python-web-crawler
               <p>
               It scans a URL and all the links from that URL and also makes an index of all the inlinks and outlinks corrsponding to keywords occuring throughout the webpage. Basically, it's a smaller version of a search engine.<br>
-              <a href="https://github.com/akshaynagpal/python_web_crawler">View code on Github</a>
+              <a  class="simple-link" href="https://github.com/akshaynagpal/python_web_crawler">View code on Github</a>
               </p>
             </li>
             <li>
               Contribution to other Open Source projects
               <ul>
-                <li>three.js  - <a href="https://github.com/mrdoob/three.js/pull/5634">#5634</a> ,
-                    <a href="https://github.com/mrdoob/three.js/pull/5635">#5635</a>
+                <li>three.js  - <a  class="simple-link" href="https://github.com/mrdoob/three.js/pull/5634">#5634</a> ,
+                    <a  class="simple-link" href="https://github.com/mrdoob/three.js/pull/5635">#5635</a>
                 </li>
-                <li>rvest - <a href="https://github.com/hadley/rvest/pull/101">#101</a>,
-                            <a href="https://github.com/hadley/rvest/issues/102">#102</a>
+                <li>rvest - <a  class="simple-link" href="https://github.com/hadley/rvest/pull/101">#101</a>,
+                            <a  class="simple-link" href="https://github.com/hadley/rvest/issues/102">#102</a>
                 </li>
                 <li>IEEER</li>
-                <li>rentrez - <a href="https://github.com/ropensci/rentrez/issues/45">#45</a> , 
-                              <a href="https://github.com/ropensci/rentrez/issues/46">#46</a></li>
+                <li>rentrez - <a class="simple-link"  href="https://github.com/ropensci/rentrez/issues/45">#45</a> , 
+                              <a  class="simple-link" href="https://github.com/ropensci/rentrez/issues/46">#46</a></li>
               </ul>
             </li>
           </ul>
@@ -106,7 +118,7 @@
             <li>
               Career Path Suggestion using String Matching and Decision Trees
               <p>International Journal of Computer Applications Volume 117 - Number 7,Pg 32-34, (May 2015)</p>
-              <a href="http://research.ijcaonline.org/volume117/number7/pxc3902964.pdf" target="_blank">[View PDF]</a>
+              <a  class="simple-link" href="http://research.ijcaonline.org/volume117/number7/pxc3902964.pdf" target="_blank">[View PDF]</a>
             </li>
           </ul>
         </div>
@@ -116,13 +128,13 @@
             <ul data-role="listview" data-inset="true">
               <li>
                 <div style="float:right"><i>June - July 2015</i></div>
-                <h3><a href="http://www.medialabasia.in/" target="_blank">Media Lab Asia</a></h3>
+                <h3><a  class="simple-link" href="http://www.medialabasia.in/" target="_blank">Media Lab Asia</a></h3>
                 <h4>Research and Development Intern</h4>
                 <p>Details will be updated soon.</p>
               </li>
               <li>
                 <div style="float:right"><i>May - June 2014</i></div>
-                <h3 ><a href="http://www.karmatech.in/" target="_blank">Karmatech Mediaworks</a></h3>
+                <h3 ><a class="simple-link"  href="http://www.karmatech.in/" target="_blank">Karmatech Mediaworks</a></h3>
                 <h4>Web Development Intern</h4>
                 <p>
                   Languages/Technologies used: <strong>PHP MySQL HTML5 Javascript</strong><br>
@@ -171,7 +183,7 @@
       
       <div data-role="main">
         <div id="contact-info">
-        <h3><a href="http://twitter.com/akshay2626">Follow on Twitter (@akshay2626)</a></h3>
+        <h3><a  class="simple-link" href="http://twitter.com/akshay2626">Follow on Twitter (@akshay2626)</a></h3>
         
         <h3>Email - akshay2626 [at] gmail [dot] com</h3>
         
