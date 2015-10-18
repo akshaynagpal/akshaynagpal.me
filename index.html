@@ -61,7 +61,9 @@
       .wrapit h1{
         text-align: center;
       }
-
+      #contact-info{
+        width: auto;
+      }
 
     </style>
   
@@ -88,12 +90,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     
     <div data-role="page" id="about" >
-      
+
+    <!-- CONTACT PANEL -->
+
+
+        <div data-role="panel" id="contact-info" data-display="overlay" data-position-fixed="true">
+        <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+        <p> I am currently living in New Delhi, India.</p> 
+         <a  data-role="button" data-inline="true" class="simple-link" href="http://twitter.com/akshay2626">Twitter : @akshay2626</a>
+        <br>
+        <a data-role="button" data-inline="true" href="mailto:akshay2626@gmail.com">Email: akshay2626 <i>at</i> gmail <i>dot</i> com </a>
+        <br>
+
+        <iframe src="https://docs.google.com/forms/d/1MzlDuZEFd4yjZpeLMtZ3FyXfpM9WonO7OkR4xLIUjMg/viewform?embedded=true" width=device-width height="690" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading...</iframe>      
+        </div>
+      <!-- END CONTACT PANEL -->
+
+
       <div data-role="header" data-position="fixed" data-id="persistent-header" data-tap-toggle="false">
         <div data-role="navbar">
           <ul>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#contact" data-transition="pop">CONTACT</a></li>
+            <li><a href="#contact-info" >CONTACT</a></li>
+            <li><a href="#">HOME</a></li>
             <li><a href="http://www.beancoder.com">BLOG</a></li>
           </ul>
         </div>
@@ -102,14 +120,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       <div data-role="main">
         <div id="introduction">
-          <br>
-        <h1>Hello! <br> My name is Akshay Nagpal.</h1>
-        <h3> I am a Senior Computer Science Undergraduate.</h3>
+          <img align="middle" src="images/me_round.png">
+        <h1>Hello! My name is Akshay Nagpal.</h1>
+        <h3> I am a Senior Computer Science Undergraduate.
         
-        <h3> I love to write <i>intelligent, reusable</i> and <i>user-centric</i> code. </h3>
+        I love to write <i>intelligent, reusable</i> and <i>user-centric</i> code. </h3>
              I am currently experimenting with <a href= "https://www.raspberrypi.org/" target="_blank"> Raspberry Pi</a> and <a href="http://opencv.org/" target="_blank">OpenCV</a> for my final year project. <br>
       
-        <h3> <i>Technology Stack</i>: Python |  R  |  HTML5  |  JavaScript | jQuery Mobile | Wordpress </h4>
+        <h4> <i>Tech Stack</i>: Python |  R  |  HTML5  |  JavaScript | jQuery Mobile | PHP | Wordpress </h4>
         <br>
         </div>
 
@@ -117,44 +135,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <h1>Projects</h1>
           <ul data-role="listview" data-inset="true">
 
-            <li><strong>MJAR</strong> (R)
-              <p class="wrapit">API Search/access The Medical Journal of Australia's database of journals using web scraping using R.
-              <a  class="simple-link" href="http://akshaynagpal.github.io/mjar">Read more at package website</a></p>
-            </li>
-
             <li><strong>Tic Tac Toe </strong>(HTML5 & JavaScript)
               <p class="wrapit">Simple Human v/s Computer game made using a combination of decision trees and Min Max algorithm.
-                <a class ="simple-link" href="http://beancoder.com/tictactoe/" target="_blank">Play Game</a>
+                <a class ="simple-link" href="http://beancoder.com/tictactoe/" target="_blank">[ Play Game] </a>
+                <a class ="simple-link" href="https://github.com/akshaynagpal/tic-tac-toe/blob/master/index.html" target="_blank">[ View code on Github ]</a>
               </p>
+            </li>
+
+            <li class="wrapit"><strong>Number Recognition using k-Nearest-Neighbors Classification</strong> (Python)
+            <p class="wrapit"> k-Nearest-Neighbors Algorithm used to determine the digit in an image. 
+            <a class ="simple-link" href="https://github.com/akshaynagpal/number_recognition/blob/master/NUMBER_RECOGNIZER.py" target="_blank">[ View code on Github ]</a>
+            </p>
             </li>
 
             <li><strong>RgScholar</strong> (R)
               <p class="wrapit">API to search Google Scholar for research papers based on user input and search filters using R.
-                <a  class="simple-link" href="http://akshaynagpal.github.io/RgScholar/">Read more at package website</a> </p>
-            </li>
+                <a  class="simple-link" href="http://akshaynagpal.github.io/RgScholar/">Read more at package website</a>
 
-            <li class="wrapit"><strong>Number Recognition using k-Nearest-Neighbors Classification</strong> (Python)
-            <p class="wrapit"> k-Nearest-Neighbors Algorithm used to determine the digit in an image. More details to be updated.</p></li>
+                <a class ="simple-link" href="https://github.com/akshaynagpal/RgScholar" target="_blank">[ View code on Github ]</a>
+
+              </p>
+            </li>   
+
+             <li><strong>Career Path Suggestion using String Matching and Decision Trees</strong> (Python)
+              <p class="wrapit">Suggest the most appropriate career path for the student using algorithms containing majorly decision trees and string matching using FuzzyWuzzy Python library. The algorithms were applied on a dataset obtained from the LinkedIn API.
+                <a class ="simple-link" href="https://github.com/akshaynagpal/career_path_suggestion/blob/master/CareerSuggestionGUI.py" target="_blank">[ View code on Github ]</a>
+
+              </p>
+            </li>            
 
             <li><strong>Web Page Analysis</strong> (Python)
               <p class="wrapit">
-              It scans a URL and all the links from that URL and also makes an index of all the inlinks and outlinks corrsponding to keywords occuring throughout the webpage. Basically, it's a smaller version of a search engine.<br>
-              <a  class="simple-link" href="https://github.com/akshaynagpal/python_web_crawler">View code on Github</a>
+              Implemented Google's Page Rank algorithm on a small scale by web scraping URLs within a small domain group. URLs were collected using Beautiful-Soup Python library & ranked using Stanford's Page Rank Algorithm. Basically, it's a smaller version of a search engine.<br>
+              <a  class="simple-link" href="https://github.com/akshaynagpal/python_web_crawler" target="_blank">[ View code on Github ]</a>
+              </p>
+            </li>
+
+            <li><strong>MJAR</strong> (R)
+              <p class="wrapit">API Search/access The Medical Journal of Australia's database of journals using web scraping using R.
+              <a  class="simple-link" href="http://akshaynagpal.github.io/mjar" target="_blank">[ Read more at package website ]</a></p>
+            </li>
+
+            <li><strong>User Login & Registration Mechanism</strong>(PHP, MySQL)
+              <p class="wrapit">
+              Implemented features like session variable storage, login, logout, new user registration and database management.<br>
+              <a  class="simple-link" href="https://github.com/akshaynagpal/social-network-logic" target="_blank">[ View code on Github ]</a>
               </p>
             </li>
 
             <li class="wrapit">
               <div  class="wrapit">Contribution to other Open Source projects</div>
               <ul>
-                <li>three.js  - <a  class="simple-link" href="https://github.com/mrdoob/three.js/pull/5634">#5634</a> ,
-                    <a  class="simple-link" href="https://github.com/mrdoob/three.js/pull/5635">#5635</a>
+                <li>three.js (JavaScript 3D library) - <a  class="simple-link" href="https://github.com/mrdoob/three.js/pull/5634">#5634</a> ,
+                    <a  class="simple-link" href="https://github.com/mrdoob/three.js/pull/5635" target="_blank">#5635</a>
                 </li>
-                <li>rvest - <a  class="simple-link" href="https://github.com/hadley/rvest/pull/101">#101</a>,
-                            <a  class="simple-link" href="https://github.com/hadley/rvest/issues/102">#102</a>
+                <li>rvest (R package for web scraping) - <a  class="simple-link" href="https://github.com/hadley/rvest/pull/101" target="_blank">#101</a>,
+                            <a  class="simple-link" href="https://github.com/hadley/rvest/issues/102" target="_blank">#102</a>
                 </li>
-                <li>IEEER</li>
-                <li>rentrez - <a class="simple-link"  href="https://github.com/ropensci/rentrez/issues/45">#45</a> , 
-                              <a  class="simple-link" href="https://github.com/ropensci/rentrez/issues/46">#46</a></li>
+                <li>IEEER (R package to search IEEE journals)</li>
+                <li>rentrez (R package to search NCBI journal) - <a class="simple-link"  href="https://github.com/ropensci/rentrez/issues/45" target="_blank">#45</a> , 
+                              <a  class="simple-link" href="https://github.com/ropensci/rentrez/issues/46" target="_blank">#46</a></li>
               </ul>
             </li>
           </ul>
@@ -166,6 +206,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li  class="wrapit">
               Career Path Suggestion using String Matching and Decision Trees
               <p class="wrapit">International Journal of Computer Applications Volume 117 - Number 7,Pg 32-34, (May 2015)</p>
+              <p class="wrapit"><strong><i>Abstract</i></strong>
+High   school   and   college   graduates   seemingly   are   often battling for the courses they should major in order to achieve their  target  career.  In  this  paper,  we  worked  on  suggesting  a career  path  to  a  graduate  to  reach 
+his/her  dream  career  given the current educational status. Firstly,  we collected the career data  of  professionals  and  academicians  from  various  career fields  and  compiled  the  data  set  by  using  the  necessary information from the data. Further, this was used as the basis to  suggest  the  most  appropriate  career  path for  the  person given  his/her  current  educational  status.  Decision  trees  and string  matching  algorithms  were  employed  to  suggest  the appropriate career path for a person. Finally, an analysis of the result has been done directing to further improvements in the model.</p>
               <a  class="simple-link" href="http://research.ijcaonline.org/volume117/number7/pxc3902964.pdf" target="_blank">[View PDF]</a>
             </li>
           </ul>
@@ -224,17 +267,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <br>
       <div data-role="footer"  data-id="persistent-footer" >
         
-       <p> © Akshay Nagpal. All rights reserved. Background image by Atle Mo under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons 3.0 License</a>. </p>
+       <p>© Akshay Nagpal. All rights reserved. Background image by Atle Mo under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">Creative Commons 3.0 License</a>. </p>
       </div>
 
     </div>  <!-- page end -->
     
     
  
-    
-    
-    
-    
     
     
     
@@ -252,26 +291,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
       </div>
       
-      <div data-role="main">
-        <div id="contact-info">
-        <p> I am currently living in New Delhi, India </p>
-        <h4>You can get in touch by any of the following options. </h4>
+      <div data-role="panel" id="contact-info">
+        <p> I am currently living in New Delhi, India.
+        </p> 
         Twitter : <a  data-role="button" data-inline="true" class="simple-link" href="http://twitter.com/akshay2626">@akshay2626</a>
         <br>
         Email : <a data-role="button" data-inline="true" href="mailto:akshay2626@gmail.com">  akshay2626 <i>at</i> gmail <i>dot</i> com </a>
         <br>
-        <p>Or use the following form to send me a quick message.</p>
-        <iframe src="https://docs.google.com/forms/d/1MzlDuZEFd4yjZpeLMtZ3FyXfpM9WonO7OkR4xLIUjMg/viewform?embedded=true" width=device-width height="620" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading...</iframe>      </div>
+
+        <iframe src="https://docs.google.com/forms/d/1MzlDuZEFd4yjZpeLMtZ3FyXfpM9WonO7OkR4xLIUjMg/viewform?embedded=true" width=device-width height="690" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading...</iframe>      </div>
       </div>
       
-      <div data-role="footer"  data-position="fixed" data-id="persistent-footer">
+<!--       <div data-role="footer"  data-position="fixed" data-id="persistent-footer">
         © Akshay Nagpal. All rights reserved. 
         
         
 
     
     
-        </div>
+        </div> -->
     </div>  <!-- page end -->
    
   </body>
