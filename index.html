@@ -54,9 +54,8 @@
         text-align:center;
       }
       #introduction{
-        background-image : url('https://raw.githubusercontent.com/akshaynagpal/akshaynagpal.me/gh-pages/images/retina_wood.png');
-        width : 100%
-        background-repeat: repeat-y;
+          width : 100%
+          background: url('https://raw.githubusercontent.com/akshaynagpal/akshaynagpal.me/gh-pages/images/retina_wood.png') repeat-y;
       }
       .wrapit h1{
         text-align: center;
@@ -91,8 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <div data-role="page" id="about" >
 
-    <!-- CONTACT PANEL -->
-
+        <!-- CONTACT PANEL -->
 
         <div data-role="panel" id="contact-info" data-display="overlay" data-position-fixed="true" data-dismissible="false" data-swipe-close = "false">
         <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
@@ -102,16 +100,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a data-role="button" data-inline="true" href="mailto:akshay2626@gmail.com">Email: akshay2626 <i>at</i> gmail <i>dot</i> com </a>
         <br>
 
-        <iframe src="https://docs.google.com/forms/d/1MzlDuZEFd4yjZpeLMtZ3FyXfpM9WonO7OkR4xLIUjMg/viewform?embedded=true" width=device-width height="690" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading...</iframe>      
-        </div>
-      <!-- END CONTACT PANEL -->
+        <!--<iframe src="https://docs.google.com/forms/d/1MzlDuZEFd4yjZpeLMtZ3FyXfpM9WonO7OkR4xLIUjMg/viewform?embedded=true" width=device-width height="690" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">Loading...</iframe>      -->
+        <!--</div>-->
+
+        <!-- END CONTACT PANEL -->
 
 
       <div data-role="header" data-position="fixed" data-id="persistent-header" data-tap-toggle="false">
         <div data-role="navbar">
           <ul>
             <li><a href="#contact-info" >CONTACT</a></li>
-            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#projects">PROJECTS</a> </li>
             <li><a href="http://www.beancoder.com">BLOG</a></li>
           </ul>
         </div>
@@ -134,68 +134,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div  class="wrapit" data-role="collapsible">
 
-          <h1>Projects</h1>
+          <h1 id="projects">Projects</h1>
 
           <ul data-role="listview" data-inset="true">
+
              <li><strong> <span class="wrapit"> Statistical & Sentiment Analysis of Factors Affecting State-wise Tourism in India </strong>(Python, Kimono API, Excel)</span>
-              <p class="wrapit">
-                <p class="wrapit">- Mined and cleaned data and tweets, both manually (using Python CSV module) & with the aid of Kimono API
-                </p>
-                <p class="wrapit">- Performed sentiment analysis on tweets using NLTK (Natural Language Toolkit) in Python</p>
-                <p class = "wrapit"><u>Project Abstract</u><br>
-                This project factors in the tourism and infrastructural data and relate it to the crime of each state of India. The aim of the project is to understand the relation between the 3 factors using data visualization as well as sentiment analysis to study the effect of the various factors on the tourism of the country.  The sentiment analysis done, aims to find out the reasons, if any for the changes in any of the parameters over the 10 year period that has been taken as a sample. The assumption behind the project being that whenever there is any change in one of the parameters, there is usually a change observed in any one or both the other parameters.
-                
-                <a class ="simple-link" href="https://github.com/akshaynagpal/data_mining_tourism" target="_blank">[ View Report/Code on Github ] </a>
-              </p>
-            </li>
+                  <p class="wrapit">
+                    <p class="wrapit">- Mined and cleaned data and tweets, both manually (using Python CSV module) & with the aid of Kimono API
+                    </p>
+                    <p class="wrapit">- Performed sentiment analysis on tweets using NLTK (Natural Language Toolkit) in Python</p>
+                    <p class = "wrapit"><u>Project Abstract</u><br>
+                    This project factors in the tourism and infrastructural data and relate it to the crime of each state of India. The aim of the project is to understand the relation between the 3 factors using data visualization as well as sentiment analysis to study the effect of the various factors on the tourism of the country.  The sentiment analysis done, aims to find out the reasons, if any for the changes in any of the parameters over the 10 year period that has been taken as a sample. The assumption behind the project being that whenever there is any change in one of the parameters, there is usually a change observed in any one or both the other parameters.
+
+                    <a class ="simple-link" href="https://github.com/akshaynagpal/data_mining_tourism" target="_blank">[ View Report/Code on Github ] </a>
+                  </p>
+             </li>
 
 
             <li><strong>Tic Tac Toe </strong>(HTML5 & JavaScript)
-              <p class="wrapit">Simple Human v/s Computer game made using a combination of decision trees and Min Max algorithm.
-                <a class ="simple-link" href="http://beancoder.com/tictactoe/" target="_blank">[ Play Game] </a>
-                <a class ="simple-link" href="https://github.com/akshaynagpal/tic-tac-toe/blob/master/index.html" target="_blank">[ View code on Github ]</a>
-              </p>
+                  <p class="wrapit">Simple Human v/s Computer game made using a combination of decision trees and Min Max algorithm.
+                    <a class ="simple-link" href="http://beancoder.com/tictactoe/" target="_blank">[ Play Game] </a>
+                    <a class ="simple-link" href="https://github.com/akshaynagpal/tic-tac-toe/blob/master/index.html" target="_blank">[ View code on Github ]</a>
+                  </p>
             </li>
 
             <li class="wrapit"><strong>Number Recognition using k-Nearest-Neighbors Classification</strong> (Python)
-            <p class="wrapit"> k-Nearest-Neighbors Algorithm used to determine the digit in an image. 
-            <a class ="simple-link" href="https://github.com/akshaynagpal/number_recognition/blob/master/NUMBER_RECOGNIZER.py" target="_blank">[ View code on Github ]</a>
-            </p>
+                    <p class="wrapit"> k-Nearest-Neighbors Algorithm used to determine the digit in an image.
+                    <a class ="simple-link" href="https://github.com/akshaynagpal/number_recognition/blob/master/NUMBER_RECOGNIZER.py" target="_blank">[ View code on Github ]</a>
+                    </p>
             </li>
 
             <li><strong>RgScholar</strong> (R)
-              <p class="wrapit">API to search Google Scholar for research papers based on user input and search filters using R.
-                <a  class="simple-link" href="http://akshaynagpal.github.io/RgScholar/">Read more at package website</a>
-
-                <a class ="simple-link" href="https://github.com/akshaynagpal/RgScholar" target="_blank">[ View code on Github ]</a>
-
-              </p>
+                <p class="wrapit">API to search Google Scholar for research papers based on user input and search filters using R.
+                    <a  class="simple-link" href="http://akshaynagpal.github.io/RgScholar/">Read more at package website</a>
+                    <a class ="simple-link" href="https://github.com/akshaynagpal/RgScholar" target="_blank">[ View code on Github ]</a>
+                </p>
             </li>   
 
              <li><strong>Career Path Suggestion using String Matching and Decision Trees</strong> (Python)
-              <p class="wrapit">Suggest the most appropriate career path for the student using algorithms containing majorly decision trees and string matching using FuzzyWuzzy Python library. The algorithms were applied on a dataset obtained from the LinkedIn API.
-                <a class ="simple-link" href="https://github.com/akshaynagpal/career_path_suggestion/blob/master/CareerSuggestionGUI.py" target="_blank">[ View code on Github ]</a>
-
-              </p>
+                <p class="wrapit">Suggest the most appropriate career path for the student using algorithms containing majorly decision trees and string matching using FuzzyWuzzy Python library. The algorithms were applied on a dataset obtained from the LinkedIn API.
+                    <a class ="simple-link" href="https://github.com/akshaynagpal/career_path_suggestion/blob/master/CareerSuggestionGUI.py" target="_blank">[ View code on Github ]</a>
+                </p>
             </li>            
 
             <li><strong>Web Page Analysis</strong> (Python)
-              <p class="wrapit">
-              Implemented Google's Page Rank algorithm on a small scale by web scraping URLs within a small domain group. URLs were collected using Beautiful-Soup Python library & ranked using Stanford's Page Rank Algorithm. Basically, it's a smaller version of a search engine.<br>
-              <a  class="simple-link" href="https://github.com/akshaynagpal/python_web_crawler" target="_blank">[ View code on Github ]</a>
-              </p>
+                  <p class="wrapit"> Implemented Google's Page Rank algorithm on a small scale by web scraping URLs within a small domain group. URLs were collected using Beautiful-Soup Python library & ranked using Stanford's Page Rank Algorithm. Basically, it's a smaller version of a search engine.<br>
+                    <a  class="simple-link" href="https://github.com/akshaynagpal/python_web_crawler" target="_blank">[ View code on Github ]</a>
+                  </p>
             </li>
 
             <li><strong>MJAR</strong> (R)
-              <p class="wrapit">API Search/access The Medical Journal of Australia's database of journals using web scraping using R.
-              <a  class="simple-link" href="http://akshaynagpal.github.io/mjar" target="_blank">[ Read more at package website ]</a></p>
+                  <p class="wrapit">API Search/access The Medical Journal of Australia's database of journals using web scraping using R.
+                    <a  class="simple-link" href="http://akshaynagpal.github.io/mjar" target="_blank">[ Read more at package website ]</a>
+                  </p>
             </li>
 
             <li><strong>User Login & Registration Mechanism</strong>(PHP, MySQL)
-              <p class="wrapit">
-              Implemented features like session variable storage, login, logout, new user registration and database management.<br>
-              <a  class="simple-link" href="https://github.com/akshaynagpal/social-network-logic" target="_blank">[ View code on Github ]</a>
-              </p>
+                <p class="wrapit"> Implemented features like session variable storage, login, logout, new user registration and database management.<br>
+                    <a  class="simple-link" href="https://github.com/akshaynagpal/social-network-logic" target="_blank">[ View code on Github ]</a>
+                </p>
             </li>
 
             <li class="wrapit">
@@ -208,7 +205,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             <a  class="simple-link" href="https://github.com/hadley/rvest/issues/102" target="_blank">#102</a>
                 </li>
                 <li>IEEER (R package to search IEEE journals)</li>
-                <li>rentrez (R package to search NCBI journal) - <a class="simple-link"  href="https://github.com/ropensci/rentrez/issues/45" target="_blank">#45</a> , 
+                <li>rentrez (R package to search NCBI journal) - <a class="simple-link"  href="https://github.com/ropensci/rentrez/issues/45" target="_blank">#45</a> ,
                               <a  class="simple-link" href="https://github.com/ropensci/rentrez/issues/46" target="_blank">#46</a></li>
               </ul>
             </li>
@@ -219,11 +216,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <h1>Research</h1>
           <ul data-role="listview" data-inset="true">
             <li  class="wrapit">
+              Application of K-Nearest-Neighbors Classification for Number Recognition
+              <p class="wrapit">International Journal of Engineering and Future Technology Volume 1 - Issue 1,Pg 36-42, (March 2016)</p>
+              <p class="wrapit"><strong><i>Abstract</i></strong>
+                  In this paper, I have presented an application of k-nearest-neighbors classification algorithm to single digit recognition.
+                  A classifier function was developed which could recognize the number present in the image.
+                  The input to the classifier function consists of PNG and JPEG files containing a single digit.
+                  The classifier recognized the number by using the dataset of text files given to it.
+                  It was observed that the accuracy of the classifier improved with every iteration of the program as the program learnt from its earlier errors.
+                  Finally, further improvements and future scope of the model has been discussed.
+              </p>
+              <a  class="simple-link" href="http://ceser.in/ceserp/index.php/IJFET/article/view/4287" target="_blank">[ Journal Link ]</a>
+            </li>
+
+            <li  class="wrapit">
               Career Path Suggestion using String Matching and Decision Trees
               <p class="wrapit">International Journal of Computer Applications Volume 117 - Number 7,Pg 32-34, (May 2015)</p>
               <p class="wrapit"><strong><i>Abstract</i></strong>
-High   school   and   college   graduates   seemingly   are   often battling for the courses they should major in order to achieve their  target  career.  In  this  paper,  we  worked  on  suggesting  a career  path  to  a  graduate  to  reach 
-his/her  dream  career  given the current educational status. Firstly,  we collected the career data  of  professionals  and  academicians  from  various  career fields  and  compiled  the  data  set  by  using  the  necessary information from the data. Further, this was used as the basis to  suggest  the  most  appropriate  career  path for  the  person given  his/her  current  educational  status.  Decision  trees  and string  matching  algorithms  were  employed  to  suggest  the appropriate career path for a person. Finally, an analysis of the result has been done directing to further improvements in the model.</p>
+                High   school   and   college   graduates   seemingly   are   often battling for the courses they should major in order to achieve their  target  career.  In  this  paper,  we  worked  on  suggesting  a career  path  to  a  graduate  to  reach
+                his/her  dream  career  given the current educational status. Firstly,  we collected the career data  of  professionals  and  academicians  from  various  career fields  and  compiled  the  data  set  by  using  the  necessary information from the data. Further, this was used as the basis to  suggest  the  most  appropriate  career  path for  the  person given  his/her  current  educational  status.  Decision  trees  and string  matching  algorithms  were  employed  to  suggest  the appropriate career path for a person. Finally, an analysis of the result has been done directing to further improvements in the model.</p>
               <a  class="simple-link" href="http://research.ijcaonline.org/volume117/number7/pxc3902964.pdf" target="_blank">[View PDF]</a>
             </li>
           </ul>
