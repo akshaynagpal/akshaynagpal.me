@@ -57,12 +57,16 @@
           background-image : url('https://raw.githubusercontent.com/akshaynagpal/akshaynagpal.me/gh-pages/images/retina_wood.png');
           width : 100%
           background-repeat: repeat-y;
+          font-family: "Garamond",Arial,sans-serif;
       }
       .wrapit h1{
         text-align: center;
       }
       #contact-info{
         width: auto;
+      }
+      #underline{
+          text-decoration: underline;
       }
 
     </style>
@@ -129,13 +133,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <h1>Hello! My name is Akshay Nagpal.</h1>
             <h3> I am a Senior Computer Science Undergraduate.
 
-                I love to write <i>intelligent, reusable</i> and <i>user-centric</i> code. </h3>
-                I am currently experimenting with <a href= "https://www.raspberrypi.org/" target="_blank"> Raspberry Pi</a> and <a href="http://opencv.org/" target="_blank">OpenCV</a> for my final year project, <i>"Voice Controlled Personal Assistant"</i>.
-                I am also writing a 2 player game these days.
+                I love to write <span  id="underline"> intelligent</span>, <span id="underline"> reusable</span> and <span id="underline">user-centric</span> code.
+                <br><br>I am currently experimenting with <a href= "https://www.raspberrypi.org/" target="_blank"> Raspberry Pi</a> for my final year project, <strong>Voice Controlled Personal Assistant</strong>.
+                <br> <br> I am also writing a <strong> 2 player game </strong>these days.
 
-                 <br><br><i><strong>UPDATE</strong></i>: I just created a python module, <a href = "https://pypi.python.org/pypi/word2number" target="_blank">word2number</a> which can convert number-words (eg. three hundred and twenty one) to numeric digits (321).
+                 <br><br><span id="underline">UPDATE</span>: I just created a python module, <a href = "https://pypi.python.org/pypi/word2number" target="_blank">word2number</a> which can convert number-words (eg. three hundred and twenty one) to numeric digits (321).
+           </h3>
 
-            <h4> <i>Tech Stack</i>: Python |  R  |  HTML5  |  JavaScript | jQuery Mobile | PHP | Wordpress </h4>
+            <h3> <span id="underline">Tech Stack</span>: Python |  R  |  HTML5  |  JavaScript | jQuery Mobile | PHP | Wordpress </h3>
             <br><br>
         </div>
 
@@ -289,9 +294,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div id = "misc" class="wrapit">
           <h1> Miscellaneous</h1>
-          <p  class="wrapit"> I have an course on Web Application Development that has been subscribed by almost 2000 students worldwide. The course has been featured on <a href="https://www.udemy.com/build-3-web-applications-in-90-minutes/?couponCode=61PERCENTOFF" target="_blank"> Udemy</a>, Edurila, ULearning and YodaLearning .
-
-          </p>
+          <ul data-role="listview" data-inset="true">
+              <li  class="wrapit">
+                  <p class="wrapit">I have an course on Web Application Development that has been subscribed by almost 2000 students worldwide. The course has been featured on
+                      <a href="https://www.udemy.com/build-3-web-applications-in-90-minutes/?couponCode=61PERCENTOFF" target="_blank"> Udemy</a>, Edurila, ULearning and YodaLearning .
+                  </p>
+              </li>
+          </ul>
         </div>
 
       </div>
