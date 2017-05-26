@@ -1,28 +1,36 @@
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+.affix {
+  top: 0;
+  width: 100%;
+}
+ 
 body
 {
 	font-family: 'Droid Sans Mono', monospace;
 }
 #about
 {
-	background-color: #e60000;
-	color: white;
+	/*background-color: #e60000;*/
+	/*color: white;*/
 }
 #section2
 {
-	background-color: #3366ff;
-	color: white;
+	/*background-color: #3366ff;*/
+	/*color: white;*/
 }
 
 #section3
 {
-	background-color: #ff6600;
-	color: white;
+	/*background-color: #ff6600;*/
+	/*color: white;*/
 }
 
 #section2
 {
-	background-color: #999999;
-	color: white;
+	/*background-color: #999999;*/
+	/*color: white;*/
 }
 
 footer{
