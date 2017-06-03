@@ -6,7 +6,7 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="author" content="Akshay Nagpal | akshaynagpal.me"/>
 
-		<!-- Latest compiled and minified CSS -->
+	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
@@ -15,11 +15,13 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="index2.css">
 </head>
-<body>
+<body data-spy="scroll">
 
 <!-- Banner -->
 	<div class="container-fluid">
@@ -27,8 +29,8 @@
     		<h1>Akshay Nagpal</h1>
     		<h2>Programmer | Learner | Meme Addict</h2>
     		<h4>
-    			I am a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.<br>
-    			Currently working with <a href="https://audible.com" target="_blank">Audible</a> as a Software Engineer Intern. <br>
+    			I am a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.<br><br>
+    			Currently working at <a href="https://audible.com" target="_blank">Audible</a> as a Software Engineer Intern. <br><br>
     		</h4>
   		</div>
 	</div>
@@ -38,14 +40,14 @@
 	<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="160">
 		<ul class="nav navbar-nav" style="text-align: center;">
 	          <li><a href="#about">About</a></li>
-	          <li><a href="#section2">Section 2</a></li>
-	          <li><a href="#section3">Section 3</a></li>
-	          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+	          <li><a href="#experience">Experience</a></li>
+	          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#projects">Projects <span class="caret"></span></a>
 	            <ul class="dropdown-menu">
-	              <li><a href="#section41">Section 4-1</a></li>
-	              <li><a href="#section42">Section 4-2</a></li>
+	              <li><a href="#acadProjects">Academic</a></li>
+	              <li><a href="#sideProjects">For Fun</a></li>
 	            </ul>
 	          </li>
+	          <li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav> 
 
@@ -54,7 +56,7 @@
 <!-- About -->
 	<div id="about" class="container-fluid">
 	<h1>About Me</h1>
-		I am currently a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.
+		I have gained experience in the following languages and tools through <a>internships</a>, <a>school projects</a>, <a>hackathons</a> and <a>open source projects</a>.
 		<br>
 		<br>
 		<br>
@@ -66,66 +68,110 @@
 	</div>
 <!-- END About -->
 
-<!-- About -->
-	<div id="section2" class="container-fluid">
-	<h1>About Me</h1>
-		I am currently a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+<!-- Experience -->
+	<div id="experience" class="container-fluid">
+	<h1>Experience</h1>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+		  		<div class="panel-heading"> Software Engineer Intern </div>
+		  		<div class="panel-body">
+		  			<img class="img-responsive" src="images/audible_final_2C_rgb.png"><br>
+		  			Summer 2017
+		  		</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+		  		<div class="panel-heading"> Software Engineer </div>
+		  		<div class="panel-body">
+		  			<img class="img-responsive" src="images/cuit_logo.png"><br>
+		  			Fall 2016
+		  		</div>
+			</div>
+		</div>
 	</div>
-<!-- END About -->
 
-<!-- About -->
-	<div id="section3" class="container-fluid">
-	<h1>About Me</h1>
-		I am currently a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+		  		<div class="panel-heading"> Software Engineer Intern - R&D </div>
+		  		<div class="panel-body">
+		  			<img class="img-responsive" src="images/media_lab_asia.png"><br>
+		  			Summer 2015
+		  		</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+		  		<div class="panel-heading"> Software Engineer Intern - Web Apps </div>
+		  		<div class="panel-body">
+		  			<img class="img-responsive" src="images/karmatech.png"><br>
+		  			Summer 2014
+		  		</div>
+			</div>
+		</div>
 	</div>
-<!-- END About -->
+<!-- END Experience -->
 
 
-<!-- About -->
-	<div id="section4" class="container-fluid">
-	<h1>About Me</h1>
-		I am currently a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+	<div id="projects">
+	<!-- Acad Projects -->			
+		<div id="acadProjects" class="container-fluid">
+		<h1>Academic Projects</h1>
+			I am currently a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+	<!-- END Acad Projects -->
+
+
+	<!-- Open Source Projects -->
+		<div id="sideProjects" class="container-fluid">
+		<h1> Open Source Projects </h1>
+			I am currently a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+	<!-- END Open Source Projects -->
 	</div>
-<!-- END About -->
+<!-- Contact -->
+	<div id="contact" class="container-fluid">
+		<h1>Contact Me</h1>
+		I currently stay in New York. You can contact me at <a href="mailto:akshay.nagpal@columbia.edu">akshay DOT nagpal AT columbia.edu</a>.
+		<h2> Other Profiles </h2>
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://www.linkedin.com/in/akshaynagpal" target="_blank">
+					<img src="./images/In-2C-66px-R.png" alt="LinkedIn">
+				</a>
+			</div>
 
-<!-- About -->
-	<div id="about" class="container-fluid">
-	<h1>About Me</h1>
-		I am currently a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+			<div class="col-sm-4">
+				<a href="https://stackoverflow.com/users/3120481/akshaynagpal" target="_blank">
+				<img src="https://stackoverflow.com/users/flair/3120481.png" width="208" height="58" alt="profile for akshaynagpal at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for akshaynagpal at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+				</a>
+			</div>
+
+			<div class="col-sm-4">
+				<div class="github-card" data-github="akshaynagpal" data-width="400" data-height="150" data-theme="default"></div>
+			</div>
+		</div>	
 	</div>
-<!-- END About -->
+<!-- END Contact -->
+
 <footer>
 	&copy; 2015<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Akshay Nagpal.
 </footer>
