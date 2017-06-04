@@ -1,9 +1,12 @@
-.affix + .container-fluid {
+.affix + .container-fluid 
+{
   padding-top: 70px;
 }
-.affix {
-  top: 0;
-  width: 100%;
+
+.affix 
+{
+  	top: 0;
+  	width: 100%;
 }
  
 body
@@ -12,6 +15,20 @@ body
 	text-align: center;
 }
 
+.col-sm-6, .col-sm-12
+{
+	z-index: 0;
+}
+
+nav
+{
+	z-index: 1;
+}
+
+button
+{
+	position: relative;
+}
 img
 {
 	margin: 0 auto;
@@ -22,6 +39,7 @@ img
 	display: inline-block;
 	float: none;
 }
+
 
 #about
 {
