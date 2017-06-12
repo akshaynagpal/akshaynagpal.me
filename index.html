@@ -23,16 +23,11 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body data-spy="scroll">
-<div class="jumbotron"> <h1>This website is being upgraded right now and is under construction.</h1> </div>
 <!-- Banner -->
 	<div class="container-fluid">
   		<div style="text-align: center;">
     		<h1> Akshay Nagpal </h1>
-    		<h2> Programmer | Learner | Meme Addict </h2>
-    		<h4>
-    			I am a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York.<br><br>
-    			Currently working at <a href="https://audible.com" target="_blank">Audible</a> as a Software Engineer Intern. <br><br>
-    		</h4>
+    		<h2> Programmer | Learner | <a data-toggle="tooltip" title="Someone who is addicted to Memes like an alcoholic is addicted to alcohol"> Meme Addict</a> </h2>
   		</div>
 	</div>
 <!-- END Banner -->
@@ -42,12 +37,7 @@
 		<ul class="nav navbar-nav">
 	          <li><a href="#about">About</a></li>
 	          <li><a href="#experience">Experience</a></li>
-	          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#projects">Projects <span class="caret"></span></a>
-	            <ul class="dropdown-menu">
-	              <li><a href="#acadProjects">Academic</a></li>
-	              <li><a href="#sideProjects">For Fun</a></li>
-	            </ul>
-	          </li>
+	          <li><a href="#projects">Projects </a></li>
 	          <li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav> 
@@ -56,13 +46,34 @@
 
 <!-- About -->
 	<div id="about" class="container-fluid">
-	<h1>About Me</h1>
+		<h1>About Me</h1>
+		
+			I am a Graduate Student at <a href="http://www.cs.columbia.edu/" target="_blank">Computer Science Department</a>, <a href="http://www.columbia.edu/" target="_blank">Columbia University</a>, New York. I am currently working at <a href="https://audible.com" target="_blank">Audible</a> as a Software Engineer Intern. I also blog occasionally at <a href="http://beancoder.com" target="_blank">BeanCoder</a>. I have gained experience in the following languages and tools through <a>internships</a>, <a>school projects</a>, <a>hackathons</a> and <a>open source projects</a>.<br><br>
 		<div class="row">
-			<div class="col-sm-12">
-				I have gained experience in the following languages and tools through <a>internships</a>, <a>school projects</a>, <a>hackathons</a> and <a>open source projects</a>.		
-			</div>
+			<div class="col-sm-2 panel panel-heading">Java</div>
+			<div class="col-sm-2 panel panel-heading">Python</div>
+			<div class="col-sm-2 panel panel-heading">JavaScript</div>
+			<div class="col-sm-2 panel panel-heading">PHP</div>
+			<div class="col-sm-2 panel panel-heading">HTML5</div>
+			<div class="col-sm-2 panel panel-heading">OCaml</div>
 		</div>
-	</div>
+		<div class="row">
+			<div class="col-sm-2 panel panel-heading">Bootstrap</div>
+			<div class="col-sm-2 panel panel-heading">Phaser.JS</div>
+			<div class="col-sm-2 panel panel-heading">Canvas.JS</div>
+			<div class="col-sm-2 panel panel-heading">OpenCV</div>
+			<div class="col-sm-2 panel panel-heading">MySQL</div>
+			<div class="col-sm-2 panel panel-heading">PostgreSQL</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 panel panel-heading">Amazon Web Services</div>
+			<div class="col-sm-2 panel panel-heading">Flask</div>
+			<div class="col-sm-2 panel panel-heading">Django</div>
+			<div class="col-sm-2 panel panel-heading">Unity3D</div>
+			<div class="col-sm-2 panel panel-heading">PhoneGap</div>
+			<!-- <div class="col-sm-2 panel panel-heading"></div> -->
+		</div>
+	</div>		
 <!-- END About -->
 
 <!-- Experience -->
@@ -74,13 +85,12 @@
 			  		<div class="panel-heading"> 
 			  			<img class="img-responsive" src="images/audible_final_2C_rgb.png"> </div>
 			  		<div class="panel-body">
-			  			Software Engineer Intern - Summer 2017<br>
-
+			  			Software Engineer Intern - Summer 2017<br>	
 			  			<!-- DETAILS BUTTON START -->
 			  			<button class="btn btn-info" data-toggle="collapse" data-target="#audibleDetails">Details</button>
 
 						<div id="audibleDetails" class="collapse">
-							Lorem ipsum dolor text....
+							To be updated soon.
 						</div>
 						<!-- DETAILS BUTTON END -->
 			  		</div>
@@ -89,16 +99,21 @@
 			<div class="col-sm-6">
 				<div class="panel panel-default">
 			  		<div class="panel-heading"> 
-			  			<img class="img-responsive" src="images/cuit_logo.png"> 
+			  			<img class="img-responsive" src="images/cuit_logo.png" alt="Columbia University Information Technology (CUIT)"> 
 			  		</div>
 			  		<div class="panel-body">
 			  			Software Engineer - Fall 2016<br>
-
+			  			<a href="https://cuit.columbia.edu/teaching_learning_applications" target="_blank">Teaching & Learning Applications Team</a><br>
 			  			<!-- DETAILS BUTTON START -->
 			  			<button class="btn btn-info" data-toggle="collapse" data-target="#cuitDetails">Details</button>
 
 						<div id="cuitDetails" class="collapse">
-							Lorem ipsum dolor text....
+							- Developed a database query interface and backend using Flask (Python MVC web framework), JavaScript & SQL.<br>
+							- Improved the efficiency of the tool by 70% by eliminating redundant calls to database through changing usage design of the interface<br>
+							- Improved code quality by static analysis using Pylint.<br>
+							- Integrated application component with the modular app using Flask BluePrint.<br>
+
+
 						</div>
 						<!-- DETAILS BUTTON END -->
 			  		</div>
@@ -110,15 +125,18 @@
 			<div class="col-sm-6">
 				<div class="panel panel-default">
 			  		<div class="panel-heading"> 
-			  			<img class="img-responsive" src="images/media_lab_asia.png">
+			  			<img class="img-responsive" src="images/media_lab_asia.png" alt="MIT Media Lab Asia">
 			  		</div>
 			  		<div class="panel-body">
 			  			Software Engineer Intern (R&D) - Summer 2015<br>
+			  			Research and Development Team<br>
 			  			<!-- DETAILS BUTTON START -->
 			  			<button class="btn btn-info" data-toggle="collapse" data-target="#mlasiaDetails">Details</button>
 
 						<div id="mlasiaDetails" class="collapse">
-							Lorem ipsum dolor text....
+							- Built a focused search engine for research journals using R (Shiny) as a part of a larger medical analysis application <br>
+							- Generated search results using string matching and collected usage data by tracking clicks and search box inputs <br>
+							- Built RgScholar : Open Source API to integrate Google Scholar search functionality into R applications
 						</div>
 						<!-- DETAILS BUTTON END -->
 			  			
@@ -128,15 +146,17 @@
 			<div class="col-sm-6">
 				<div class="panel panel-default">
 			  		<div class="panel-heading">  
-			  			<img class="img-responsive" src="images/karmatech.png">
+			  			<img class="img-responsive" src="images/karmatech.png" alt="Karmatech Mediaworks">
 			  		</div>
 			  		<div class="panel-body">
 			  			Software Engineer Intern (Web Apps) - Summer 2014<br>
+			  			Web Applications Team<br>
 			  			<!-- DETAILS BUTTON START -->
 			  			<button class="btn btn-info" data-toggle="collapse" data-target="#karmatechDetails">Details</button>
 
 						<div id="karmatechDetails" class="collapse">
-							Lorem ipsum dolor text....
+							- Implemented media upload and thumbnail creation interface, social login APIs and form input validation using PHP <br>
+							- Designed and implemented MySQL Stored Procedures 
 						</div>
 						<!-- DETAILS BUTTON END -->
 			  		</div>
@@ -172,51 +192,44 @@
 				</div>	
 			</div>
 
-			<div class="col-sm-5">
-				DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION.
+			<div class="col-sm-6">
+				<div class="panel panel-heading">JengAR</div>
+				<div class="panel panel-body">
+				JengAR is a one-player, augmented reality game in which users can interact with a pre-existing Jenga tower containing 48 blocks. Like the real life Jenga game, users are able to select a block from the base of the tower and place it on the top of the tower. The user’s goal is to avoid collision and collapse of the tower. If the block placement causes an imbalance of the Jenga structure, the program will detect this fault, resulting in the tower toppling over, and terminating the game. JengAR is designed to mimic real Jenga as closely as possible, just with different control mechanisms.
+				GITHUB CODE LINK / REPORT LINK
+				</div>
 			</div>
 			
-			<div class="col-sm-2">
+			<div class="col-sm-1">
 				Augmented Reality
 			</div>
 		</div>
 		<!-- PROJECT-NAME END-->
 
+		<hr>
+
 		<!-- PROJECT-NAME START-->
-		<div class="row all webapps">
+		<div class="row all open-source">
 			<div class="col-sm-5">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/w4esGA0QbNI" frameborder="0" allowfullscreen></iframe>
-				</div>	
+				<img class="img-responsive" src="images/pypi-logo.svg" alt="PyPi_Logo">
 			</div>
 
-			<div class="col-sm-5">
-				DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION.
+			<div class="col-sm-6">
+				<div class="panel panel-heading">Word2Number</div>
+					<div class="panel panel-body">
+					This is a Python module to convert number words (eg. three thousand and twenty one) to numeric digits (3021).
+					>>> print(w2n.word_to_num("nine hundred and ninety nine billion forty four million four thousand three hundred twenty three"))
+					999044004323.
+					GITHUB CODE LINK etc.
+					</div>
 			</div>
 			
-			<div class="col-sm-2">
-				Web and Apps
+			<div class="col-sm-1">
+				Open-Source
 			</div>
 		</div>
 		<!-- PROJECT-NAME END-->
-
-		<!-- PROJECT-NAME START-->
-		<div class="row all augmented">
-			<div class="col-sm-5">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/w4esGA0QbNI" frameborder="0" allowfullscreen></iframe>
-				</div>	
-			</div>
-
-			<div class="col-sm-5">
-				DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION.
-			</div>
-			
-			<div class="col-sm-2">
-				Augmented Reality
-			</div>
-		</div>
-		<!-- PROJECT-NAME END-->
+		<hr>
 	</div>
 <!-- END PROJECTS -->
 
