@@ -71,7 +71,7 @@
 			<div class="col-sm-2 panel panel-heading">Django</div>
 			<div class="col-sm-2 panel panel-heading">Unity3D</div>
 			<div class="col-sm-2 panel panel-heading">PhoneGap</div>
-			<!-- <div class="col-sm-2 panel panel-heading"></div> -->
+			<!-- <div class="col-sm-2 panel panel-heading">Flask/Django</div> -->
 		</div>
 	</div>		
 <!-- END About -->
@@ -175,6 +175,8 @@
 		<div class="btn-group">
 			<button type="button" class="btn btn-primary project-category-button" data-filter = "all"> All </button>
 	  		<button type="button" class="btn btn-primary project-category-button" data-filter = "open-source"> Open Source </button>
+	  		<button type="button" class="btn btn-primary project-category-button" data-filter = "compiler-design"> Compiler Design </button>
+	  		<button type="button" class="btn btn-primary project-category-button" data-filter = "cloud-computing"> Serverless & Cloud Computing </button>
 	  		<button type="button" class="btn btn-primary project-category-button" data-filter = "webapps"> Web and Apps </button>
 	  		<button type="button" class="btn btn-primary project-category-button" data-filter = "security"> Security </button>
 	  		<button type="button" class="btn btn-primary project-category-button" data-filter = "side"> Side Projects </button>
@@ -182,39 +184,34 @@
 		</div>
 		<!-- END BUTTON GROUP FOR PROJECTS -->
 
-		<hr>
+		<br><br>
 
 		<!-- PROJECT-NAME START-->
-		<div class="row all augmented">
+		<div class="row all augmented panel panel-default">
 			<div class="col-sm-5">
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/w4esGA0QbNI" frameborder="0" allowfullscreen></iframe>
 				</div>	
 			</div>
 
-			<div class="col-sm-6">
+			<div class="col-sm-7">
 				<div class="panel panel-heading">JengAR</div>
 				<div class="panel panel-body">
 				JengAR is a one-player, augmented reality game in which users can interact with a pre-existing Jenga tower containing 48 blocks. Like the real life Jenga game, users are able to select a block from the base of the tower and place it on the top of the tower. The user’s goal is to avoid collision and collapse of the tower. If the block placement causes an imbalance of the Jenga structure, the program will detect this fault, resulting in the tower toppling over, and terminating the game. JengAR is designed to mimic real Jenga as closely as possible, just with different control mechanisms.
 				GITHUB CODE LINK / REPORT LINK
 				</div>
 			</div>
-			
-			<div class="col-sm-1">
-				Augmented Reality
-			</div>
 		</div>
 		<!-- PROJECT-NAME END-->
 
-		<hr>
 
 		<!-- PROJECT-NAME START-->
-		<div class="row all open-source">
+		<div class="row all open-source panel panel-default">
 			<div class="col-sm-5">
 				<img class="img-responsive" src="images/pypi-logo.svg" alt="PyPi_Logo">
 			</div>
 
-			<div class="col-sm-6">
+			<div class="col-sm-7">
 				<div class="panel panel-heading">Word2Number</div>
 					<div class="panel panel-body">
 					This is a Python module to convert number words (eg. three thousand and twenty one) to numeric digits (3021).
@@ -223,13 +220,98 @@
 					GITHUB CODE LINK etc.
 					</div>
 			</div>
-			
-			<div class="col-sm-1">
-				Open-Source
+		</div>
+		<!-- PROJECT-NAME END-->
+
+		<!-- PROJECT-NAME START-->
+		<div class="row all compiler-design panel panel-default">
+			<div class="col-sm-5">
+				<img class="img-responsive" src="images/grid_logo.jpg" alt="GRIDLang_Logo">
+			</div>
+
+			<div class="col-sm-7">
+				<div class="panel panel-heading">GridLang</div>
+					<div class="panel panel-body">
+					GRIDLang is a language to design games in an intuitive and expressive manner. It enables developers to quickly prototype grid-based games and get a programmatic view of it. It simplifies the process of defining rules for a game, creating a grid and manipulating them. There are in-built language components focused on game development that enables developers to express more with less lines of code.
+					GITHUB CODE LINK etc.
+					</div>
 			</div>
 		</div>
 		<!-- PROJECT-NAME END-->
-		<hr>
+
+		<!-- PROJECT-NAME START-->
+		<div class="row all side webapps panel panel-default">
+			<div class="col-sm-5">
+				<img class="img-responsive" src="images/sigmalearn.png" alt="SigmaLearn">
+			</div>
+
+			<div class="col-sm-7">
+				<div class="panel panel-heading">SigmaLearn</div>
+					<div class="panel panel-body">
+					Our application records a professors speech and converts it to text in real time. It is an efficient application that enhances note taking by providing the summarisation feature accompanied by an assist that can aid a student understand any word that he does not understand. The application also provides videos relevant to the content to enable audio visual learning. Further, we provide relevant news articles to enable one to remain abreast with the current trends. The application will not only serve as a one stop learning solution but also serve as a saviour for the differently abled.
+					GITHUB CODE LINK etc.
+					</div>
+			</div>
+		</div>
+		<!-- PROJECT-NAME END-->
+
+		<!-- PROJECT-NAME START-->
+		<div class="row all security open-source panel panel-default">
+
+			<div class="col-sm-12">
+				<div class="panel panel-heading">Coverage Based Fault Injection</div>
+					<div class="panel panel-body">
+					Code coverage is one of the most important parameters for achieving robust software testing and design, however achieving the same is almost impossible given the limitations in testing scenarios. One such scenario is simulating environment faults for the application under test. In this project we present a prototype implementation of ​Coverage Based Fault Injection (CBFI), to test programs for errors caused due to faulty or malicious underlying hardware, operating system and other related components. In this approach CBFI is implemented as a coverage based fuzzer with ​dynamically linked library that wraps around existing GNU libc calls and permutes fault injections to fail a set of libc calls and test the program robustness as well as susceptibility to vulnerabilities due to unhandled exceptions or crashes at runtime. This work is inspired and extends the previous work on fault injections, specifically that presented in Vulnerability Testing of Software System Using Fault Injection[1] and Libfaultinj[2].
+					</div>
+			</div>
+		</div>
+		<!-- PROJECT-NAME END-->
+
+		<!-- PROJECT-NAME START-->
+		<div class="row all open-source side webapps panel panel-default">
+			<div class="col-sm-5">
+				<img class="img-responsive" src="images/codeprofiler.png" alt="codeprofiler">
+			</div>
+
+			<div class="col-sm-7">
+				<div class="panel panel-heading">CodeProfiler</div>
+					<div class="panel panel-body">
+					Github Code Analysis & Visual Summary. Scan your Github profile and get summary about your repositories and gists.
+					GITHUB CODE LINK etc.
+					</div>
+			</div>
+		</div>
+		<!-- PROJECT-NAME END-->
+
+		<!-- PROJECT-NAME START-->
+		<div class="row all cloud-computing webapps panel panel-default">
+			<div class="col-sm-5">
+				<img class="img-responsive" src="images/frameseller.png" alt="frameseller">
+			</div>
+
+			<div class="col-sm-7">
+				<div class="panel panel-heading">FrameSeller</div>
+					<div class="panel panel-body" style="text-align: justify;">
+					- Built FrameSeller API that allows user to view products, buy and pay online via stripe and see their orders.<br>
+					- HATEOAS style implementation for API responses.<br>
+					- SQS + SNS architecture for the “fan-out” design pattern and decoupling microservices for asynchronous operations<br>
+					- Slack Integration<br>
+					- AWS Step function integration for User Sign Up/Verification Process<br>
+					- Custom Authorizer to authorize user for buying products and viewing his orders
+					- Request body validation in API Gateway<br>
+					- Response Integration so that API throws valid error codes in case of errors<br>
+					- Orchestrator - orchestrates complex product ordering process, bringing together async operations of order queueing, updating order status throughout the process, payments etc.<br>
+					- Integration with Stripe API for accepting payments<br>
+					- Serverless microservices architecture using AWS API Gateway and AWS Lambda<br>
+					- API was successfully exported to Swagger and deployed to AWS Lambda again via Swagger file<br>
+					GITHUB CODE LINK etc.
+					</div>
+			</div>
+		</div>
+		<!-- PROJECT-NAME END-->
+
+
+
 	</div>
 <!-- END PROJECTS -->
 
